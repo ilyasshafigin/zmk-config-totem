@@ -4,17 +4,34 @@
   <img alt="TOTEM logo font" src="/docs/images/TOTEM_logo_bright.svg">
 </picture>
 
+# ZMK CONFIG для сплит клавиатуры TOTEM
+
+[Здесь](https://github.com/GEIGEIGEIST/totem) вы можете найти файлы аппаратной части и руководство по сборке.\
+[Здесь](https://github.com/GEIGEIGEIST/qmk-config-totem) вы можете найти конфиг QMK для TOTEM.
+
+TOTEM — это сплит-клавиатура на 38 клавиш с колоночным смещением, работающая на [ZMK](https://zmk.dev/) или [QMK](https://docs.qmk.fm/). Она предназначена для использования с SEEED XIAO BLE или RP2040.
+
+![TOTEM layout](/docs/images/TOTEM_layout.svg)
+
+## КАК ИСПОЛЬЗОВАТЬ
+
+- сделайте форк этого репозитория
+- выполните `git clone` вашего репозитория, чтобы создать локальную копию на ПК (можно использовать [командную строку](https://www.atlassian.com/git/tutorials) или [GitHub Desktop](https://desktop.github.com/))
+- настройте файл totem.keymap (все keycode можно найти в [документации ZMK](https://zmk.dev/docs/codes/))
+- выполните `git push` в ваш форк
+- на странице вашего форка на GitHub перейдите в раздел "Actions"
+- прокрутите вниз и распакуйте архив `firmware.zip`, содержащий последнюю прошивку
+- подключите левую половину TOTEM к ПК и дважды нажмите reset
+- клавиатура должна появиться как накопитель
+- перетащите файл `totem_left-seeeduino_xiao_ble-zmk.uf2` из архива на накопитель
+- повторите процесс для правой половины и файла `totem_right-seeeduino_xiao_ble-zmk.uf2`.
+
 # ZMK CONFIG FOR THE TOTEM SPLIT KEYBOARD
 
 [Here](https://github.com/GEIGEIGEIST/totem) you can find the hardware files and build guide.\
 [Here](https://github.com/GEIGEIGEIST/qmk-config-totem) you can find the QMK config for the TOTEM.
 
 TOTEM is a 38 key column-staggered split keyboard running [ZMK](https://zmk.dev/) or [QMK](https://docs.qmk.fm/). It's meant to be used with a SEEED XIAO BLE or RP2040.
-
-
-![TOTEM layout](/docs/images/TOTEM_layout.svg)
-
-
 
 ## HOW TO USE
 
